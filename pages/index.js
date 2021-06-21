@@ -11,9 +11,7 @@ export default function index() {
   const [questionDifficulty, setQuestionDifficulty] = useState("");
   const [categories, setCategories] = useState([]);
   const [numberOfQuestions, setNumberOfQuestions] = useState(10);
-
   const singnup = "Signup";
-
   useEffect(() => {
     axios
       .get("https://opentdb.com/api_category.php")
