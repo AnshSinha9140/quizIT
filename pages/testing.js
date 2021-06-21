@@ -2,10 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Header from "../components/Header";
 import axios from "axios";
-import ScoreCard from "../components/ScoreCard";
 import QuestionCard from "../components/QuestionCard";
-import LottieAnimation from "../components/lottie";
-import celebration from "../Animations/38150-celebration-particle.json";
+
 
 export default function testing() {
   const [bgColor, setBgcolor] = useState("answers-white");
