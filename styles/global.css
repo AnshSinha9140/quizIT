@@ -203,6 +203,7 @@ input {
 }
 .question {
   height: auto;
+  min-height: 100px;
   width: 100%;
   min-width: 360px;
   font-size: 1.3rem;
