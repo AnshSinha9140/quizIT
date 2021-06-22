@@ -269,16 +269,18 @@ input {
     position: absolute;
     background-color: white;
     top: 15%;
-    padding: 6px;
-    margin: auto;
+    padding: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
   .bts {
-    height: 43px;
+    height: 47px;
     color: white;
     background-color: #327ef0;
   }
   .headings {
     color: #327ef0;
+    font-size: 0.8rem;
   }
 
   .sel {
@@ -294,5 +296,75 @@ input {
   input {
     width: auto;
     max-width: 200px;
+  }
+  .score-div {
+    margin-top: 20px;
+    float: right;
+    margin-right: 12px;
+    height: 45px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid #327ef0;
+    width: 170px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 2px;
+  }
+  .sub-home {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    min-height: 450px;
+    padding: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .answers {
+    border: 2.5px solid #327ef0;
+    height: 60px;
+    width: auto;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding-top: 22px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: 0.3s ease-in;
+  }
+  .answers-box {
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    min-height: 380px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .question {
+    height: auto;
+    min-height: 80px;
+    width: 100%;
+    min-width: 360px;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 8px;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid #327ef0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 8px;
+    margin-right: 8px;
   }
 }
