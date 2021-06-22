@@ -27,20 +27,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #5190ed;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 .score-div {
   margin-top: 20px;
   float: right;
-  margin-right: 20px;
+  margin-right: 15px;
   height: 50px;
   text-align: center;
   padding: 10px 0;
   font-size: 20px;
-  border: 2px solid #5190ed;
+  border: 2px solid #327ef0;
   width: 200px;
+  margin-bottom: 50px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   background-color: white;
   border-radius: 2px;
@@ -48,65 +47,6 @@
 .whole-card {
   height: 100%;
   width: 100%;
-}
-.question {
-  height: 100px;
-  width: 100%;
-  font-size: 21px;
-  text-align: center;
-  padding-top: 8px;
-  align-items: center;
-  margin-bottom: 10px;
-  background-color: white;
-  border-radius: 10px;
-  border: 3px solid #2b4f81;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-.question-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.answers-box {
-  padding-top: 10px;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  height: 100%;
-  min-height: 380px;
-  margin-top: 10px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-/*answers css here */
-.answers {
-  border: 2.5px solid #2b4f81;
-  height: 80px;
-  width: auto;
-  border-radius: 10px;
-  font-size: 20px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  padding-top: 22px;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  transition: 0.3s ease-in;
-}
-.answers-white {
-  background-color: white;
-}
-.answers-green {
-  background-color: green;
-}
-.answers-red {
-  background-color: red;
-}
-
-.answers:hover {
-  background-color: #5190ed;
-  transition: 0.2s;
-  color: white;
-  border: 2px solid white;
 }
 
 /*homepage*/
@@ -118,8 +58,9 @@
   flex-direction: column;
   justify-content: space-evenly;
   transform: translate(-50%);
-  top: 20%;
-  height: 450px;
+  top: 15%;
+  height: 72%;
+  min-height: 400px;
   background-color: #5190ed;
   border-radius: 10px;
   width: 50%;
@@ -138,10 +79,11 @@
 }
 
 .sel {
-  margin-left: 12px;
+  margin-left: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 300px;
+  width: 250px;
+  margin-right: 3px;
 }
 .name-div {
   display: flex;
@@ -161,19 +103,30 @@
   align-items: center;
   margin-top: 5px;
 
-  justify-content: space-evenly;
+  justify-content: center;
 }
+.diff-sel {
+  padding: 3px;
+  margin-left: 150px;
+}
+
 .number-div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 5px;
   align-items: center;
 }
+.num-sel {
+  padding: 3px;
+  width: 60px;
+  margin-left: 102px;
+}
 
 input {
-  width: 300px;
+  width: auto;
+  min-width: 250px;
   height: 38px;
-  margin-left: 12px;
+  margin-left: 43px;
 }
 .welcome {
   height: 100%;
@@ -213,6 +166,9 @@ input {
   font-weight: 500;
   font-size: 22px;
 }
+.headings {
+  font-size: 1.5rem;
+}
 
 /*score*/
 .score {
@@ -229,4 +185,113 @@ input {
   padding-top: 128px;
   font-size: 28px;
   color: white;
+}
+
+/*lottie*/
+.lotties {
+  position: absolute;
+  left: 50%;
+  margin-top: 30px;
+  transform: translate(-50%);
+  align-items: center;
+}
+
+.ques-card {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.question {
+  height: auto;
+  width: 100%;
+  min-width: 360px;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid #327ef0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.question-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.answers-box {
+  padding-top: 10px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+  min-height: 380px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/*answers css here */
+.answers {
+  border: 2.5px solid #327ef0;
+  height: 80px;
+  width: auto;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding-top: 22px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: 0.3s ease-in;
+}
+.answers-white {
+  background-color: white;
+}
+.answers-green {
+  background-color: green;
+}
+.answers-red {
+  background-color: red;
+}
+
+.answers:hover {
+  background-color: #5190ed;
+  transition: 0.2s;
+  color: white;
+  border: 2px solid white;
+}
+
+@media (max-width: 480px) {
+  .main-div {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    background-color: white;
+    top: 15%;
+    padding: 6px;
+    margin: auto;
+  }
+  .bts {
+    height: 43px;
+    color: white;
+    background-color: #327ef0;
+  }
+  .headings {
+    color: #327ef0;
+  }
+
+  .sel {
+    display: flex;
+    justify-content: center;
+    margin-left: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: auto;
+    margin-right: 3px;
+    max-width: 230px;
+  }
+  input {
+    width: auto;
+    max-width: 200px;
+  }
 }

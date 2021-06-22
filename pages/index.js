@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
+import loading from "../Animations/9329-loading.json";
+import LottieAnimation from "../components/lottie";
 import { useRouter } from "next/router";
 
 export default function index() {
@@ -53,9 +55,6 @@ export default function index() {
     });
   };
 
-  //routing
-
-  //returns
   return categories.length > 0 ? (
     <div>
       <Header {...singnup} />
@@ -64,7 +63,7 @@ export default function index() {
           <div className="name-div">
             <div>
               {" "}
-              <h3>Enter your Name</h3>
+              <h3 className="headings">Enter your Name</h3>
             </div>
             <div>
               {" "}
@@ -79,12 +78,13 @@ export default function index() {
 
           <div className="category-div">
             <div>
-              <h3>Select Category</h3>
+              <h3 className = "headings">Select Category</h3>
             </div>
             <div>
               <select
+
                 value={category}
-                className="sel"
+                className="sel "
                 onChange={handleCategoryChange}
               >
                 {categories.map((option) => (
@@ -97,11 +97,12 @@ export default function index() {
           </div>
           <div className="diffculty-div">
             <div>
-              <h3>Select difficulty level</h3>
+              <h3 className ="headings">Select difficulty level</h3>
             </div>
             <div>
               {" "}
               <select
+              className="diff-sel"
                 value={questionDifficulty}
                 onChange={handleDifficultyChange}
               >
@@ -113,23 +114,25 @@ export default function index() {
           </div>
           <div className="number-div">
             <div>
-              <h3>Select number of questions</h3>
+              <h3 className ="headings">Select number of questions</h3>
             </div>
             <div>
-              <select value={numberOfQuestions} onChange={handleAmountChange}>
+              <select className="num-sel" value={numberOfQuestions} onChange={handleAmountChange}>
                 <option>10</option>
                 <option>15</option>
                 <option>20</option>
               </select>
             </div>
           </div>
-          <button onClick={onsubmit} className="btn bt">
+          <button onClick={onsubmit} className="btn bt bts">
             Start
           </button>
         </div>
       </div>
     </div>
   ) : (
-    <h1>categoris loading.....</h1>
+    <div className="lotties">
+      <LottieAnimation lottie={loading} height={650} width={700} />
+    </div>
   );
 }

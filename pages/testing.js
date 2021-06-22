@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Header from "../components/Header";
+import loading from "../Animations/9329-loading.json";
+import LottieAnimation from "../components/lottie";
 import axios from "axios";
 import QuestionCard from "../components/QuestionCard";
-
 
 export default function testing() {
   const [bgColor, setBgcolor] = useState("answers-white");
@@ -58,6 +59,8 @@ export default function testing() {
       </div>
     </div>
   ) : (
-    <h1>loading......</h1>
+    <div className="lotties">
+      <LottieAnimation lottie={loading} height={650} width={700} />
+    </div>
   );
 }
