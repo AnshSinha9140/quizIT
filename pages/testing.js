@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Header from "../components/Header";
-import loading from "../Animations/9329-loading.json";
+import countdown from "../Animations/65509-3-2-1-go.json";
+import trophy from "../Animations/43444-trophy-animation.json";
+
 import LottieAnimation from "../components/lottie";
 import axios from "axios";
 import QuestionCard from "../components/QuestionCard";
@@ -43,9 +45,14 @@ export default function testing() {
 
   return currentQuestion >= numberOfQuestions ? (
     <div className="score">
-      <h4>
-        Your score is {score} out of {numberOfQuestions}
-      </h4>
+      <div>
+        <LottieAnimation lottie={trophy} height={200} width={200} />
+      </div>
+      <div>
+        <h4>
+          Your score is {score} out of {numberOfQuestions}
+        </h4>
+      </div>
     </div>
   ) : questions.length > 0 ? (
     <div>
@@ -59,7 +66,7 @@ export default function testing() {
     </div>
   ) : (
     <div className="lotties">
-      <LottieAnimation lottie={loading} height={650} width={700} />
+      <LottieAnimation lottie={countdown} height={650} width={700} />
     </div>
   );
 }

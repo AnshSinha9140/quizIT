@@ -63,7 +63,7 @@ export default function index() {
           <div className="name-div">
             <div>
               {" "}
-              <h3 className="headings"> Name</h3>
+              <h3 className="headings">Enter Name</h3>
             </div>
             <div>
               {" "}
@@ -96,7 +96,7 @@ export default function index() {
           </div>
           <div className="diffculty-div">
             <div>
-              <h3 className="headings">Difficulty</h3>
+              <h3 className="headings">Difficulty level</h3>
             </div>
             <div>
               {" "}

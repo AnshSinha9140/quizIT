@@ -46,9 +46,11 @@
   top: 15%;
   height: 72%;
   min-height: 400px;
+  padding: 10px;
   background-color: #5190ed;
   border-radius: 10px;
   width: 50%;
+  min-width: 450px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .cat-list-item {
@@ -77,10 +79,16 @@
   margin-top: 5px;
   margin-bottom: 10px;
 }
+.name-div > div > h3 {
+  margin-right: 52px;
+}
 .category-div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.diffculty-div > div > h3 {
+  margin-right: 75px;
 }
 
 .diffculty-div {
@@ -100,6 +108,9 @@
   justify-content: center;
   margin-top: 5px;
   align-items: center;
+}
+.number-div > div > h3 {
+  margin-right: 70px;
 }
 .num-sel {
   padding: 3px;
@@ -153,23 +164,25 @@ input {
   font-size: 22px;
 }
 .headings {
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 /*score*/
 .score {
-  height: 300px;
+  height: 400px;
   position: absolute;
   background-color: #5190ed;
   left: 50%;
   transform: translate(-50%);
   width: 400px;
-  top: 25%;
+  top: 20%;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   text-align: center;
-  padding-top: 128px;
-  font-size: 28px;
+  font-size: 1.5em;
   color: white;
 }
 
@@ -185,10 +198,10 @@ input {
 .question {
   height: auto;
   width: auto;
-  min-height: 85px;
+  min-height: 90px;
   font-size: 1.3rem;
   text-align: center;
-  padding-top: 8px;
+  padding: 8px;
   align-items: center;
   margin-bottom: 10px;
   background-color: white;
@@ -342,5 +355,18 @@ input {
     margin-top: 30px;
     transform: translate(-50%);
     align-items: center;
+  }
+  .name-div > div > h3 {
+    margin: 0;
+    margin-left: 8px;
+  }
+  .diffculty-div > div > h3 {
+    margin-right: 12px;
+  }
+  .number-div > div > h3 {
+    margin-right: 38px;
+  }
+  .header {
+    margin: 0;
   }
 }
