@@ -14,21 +14,6 @@
   background-color: white;
 }
 
-/*testing*/
-.sub-home {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  min-height: 500px;
-  padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 70px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
 .score-div {
   margin-top: 20px;
   float: right;
@@ -125,6 +110,7 @@
 input {
   width: auto;
   min-width: 250px;
+  max-width: 350px;
   height: 38px;
   margin-left: 43px;
 }
@@ -167,7 +153,7 @@ input {
   font-size: 22px;
 }
 .headings {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 /*score*/
@@ -196,16 +182,10 @@ input {
   align-items: center;
 }
 
-.ques-card {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 .question {
   height: auto;
-  min-height: 100px;
-  width: 100%;
-  min-width: 360px;
+  width: auto;
+  min-height: 85px;
   font-size: 1.3rem;
   text-align: center;
   padding-top: 8px;
@@ -215,10 +195,6 @@ input {
   border-radius: 10px;
   border: 3px solid #327ef0;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-.question-card {
-  display: flex;
-  flex-direction: column;
 }
 
 .answers-box {
@@ -235,11 +211,11 @@ input {
 /*answers css here */
 .answers {
   border: 2.5px solid #327ef0;
-  height: 80px;
+  height: 65px;
   width: auto;
   border-radius: 10px;
   font-size: 1.2rem;
-  padding-top: 22px;
+  padding-top: 16px;
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
@@ -261,6 +237,16 @@ input {
   color: white;
   border: 2px solid white;
 }
+.ques-card {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 22%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
 
 @media (max-width: 480px) {
   .main-div {
@@ -280,7 +266,7 @@ input {
   }
   .headings {
     color: #327ef0;
-    font-size: 0.8rem;
+    font-size: 1em;
   }
 
   .sel {
@@ -296,6 +282,8 @@ input {
   input {
     width: auto;
     max-width: 200px;
+    border: 1px solid grey;
+    background: white;
   }
   .score-div {
     margin-top: 12px;
@@ -312,18 +300,6 @@ input {
     background-color: white;
     border-radius: 2px;
   }
-  .sub-home {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    min-height: 450px;
-    margin-top: 70px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    padding-right: 18px;
-  }
   .answers {
     border: 2.5px solid #327ef0;
     height: 60px;
@@ -336,39 +312,35 @@ input {
     margin-bottom: auto;
     transition: 0.3s ease-in;
   }
-  .answers-box {
-    padding-top: 10px;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    height: 100%;
-    min-height: 380px;
-    margin-top: 10px;
-    border-radius: 10px;
-    margin-left: 8px;
-    margin-right: 8px;
-  }
   .question {
     height: auto;
-    min-height: 90px;
-    width: 100%;
-    min-width: 360px;
+    min-height: 85px;
+    width: auto;
+    min-width: 250px;
     font-size: 1.2rem;
     text-align: center;
     padding-top: 8px;
     align-items: center;
-    margin-bottom: 10px;
     background-color: white;
     border-radius: 10px;
     border: 3px solid #327ef0;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    margin-left: 8px;
-    margin-right: 8px;
   }
-  .question-card {
-    display: flex;
-    flex-direction: column;
+  .ques-card {
+    width: 90%;
     position: absolute;
     left: 50%;
+    transform: translate(-50%);
+    top: 18%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  .lotties {
+    position: absolute;
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%);
+    align-items: center;
   }
 }

@@ -51,12 +51,11 @@ export default function testing() {
     <div>
       <Header {...yourname} />
       <div className="score-div">Score: {score}</div>
-      <div className="sub-home">
-        <QuestionCard
-          handleAnswer={handleAnswer}
-          data={questions[currentQuestion]}
-        />
-      </div>
+
+      <QuestionCard
+        handleAnswer={handleAnswer}
+        data={questions[currentQuestion]}
+      />
     </div>
   ) : (
     <div className="lotties">
